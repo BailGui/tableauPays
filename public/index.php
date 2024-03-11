@@ -27,7 +27,7 @@ try {
  */
 
 // on appelle la fonction de récupération de la DB (getAllLivreOr())
-$countries = getAllCountries($db);
+$countries = getAllCountriesAndFlags($db);
 
 // fermeture de la connexion
 $db = null;

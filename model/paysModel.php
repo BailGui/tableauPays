@@ -23,3 +23,18 @@ function getAllCountries(PDO $db): array
    return $result;
 }
 
+function getAllCountriesAndFlags(PDO $db):array
+{
+   /* définir la requête SQL permettant de récupérer tous les pays de la liste */
+   $sql = "SELECT countries.nom, countries.iso, flags.url FROM countries, flags WHERE countries.id=flags.id_pays ORDER BY countries.nom";
+   /*exécuter cette requête et la stocker dans une variable (tableau) */
+   $query = $db->query($sql);
+   /* parcourir le tableau de résultat récupérés $query */
+   $result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+   $query->closeCursor();
+
+   return $result;
+}
+
+

@@ -22,3 +22,8 @@ th, td {
 .population, .superficie, .popu_cap, .altitude {
     text-align: right;
 }
+
+.drapeau img {
+    width: 100px;
+    height: auto;
+}

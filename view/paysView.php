@@ -16,12 +16,13 @@
         <tr>
             <th>Nom</th>
             <th>Code ISO</th>
-            <th>Population</th>
+            <th>Drapeau</th>
+            <!--<th>Population</th>
             <th>Superficie</th>
             <th>Continent</th>
             <th>Capitale</th>
             <th>Population de la capitale</th>
-            <th>Altitude de la capitale</th>
+            <th>Altitude de la capitale</th>*/-->
         </tr>
     <?php
     foreach($countries as $country) {
@@ -29,12 +30,8 @@
       <tr>
         <td class="nomPays"><?php echo $country['nom']; ?></td>
         <td class="codeISO"><?php echo $country['iso']; ?></td>
-        <td class="population"><?php echo $country['population']; ?></td>
-        <td class="superficie"><?php echo $country['superficie']; ?></td>
-        <td class="continent"><?php echo $country['continent']; ?></td>
-        <td class="capitale"><?php echo $country['capitale']; ?></td>
-        <td class="popu_cap"><?php echo $country['popu_cap']; ?></td>
-        <td class="altitude"><?php echo $country['altitude']; ?></td>
+        <td class="drapeau"><img src="img/svg/<?php echo $country['url']; ?>" alt="<?php echo $country['nom']; ?>" ></td>
+       
       </tr>
     <?php 
     }
