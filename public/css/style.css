@@ -1,0 +1,24 @@
+table, th, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+.nomPays {
+    font-variant: small-caps;
+}
+
+.capitale {
+    font-style: italic;
+}
+
+.codeISO, .continent, .capitale {
+    text-align: center;
+}
+
+.population, .superficie, .popu_cap, .altitude {
+    text-align: right;
+}
